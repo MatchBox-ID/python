@@ -1,16 +1,8 @@
-import pyautogui as pt
+import pyautogui
+import webbrowser as wb
 import time
-
-limit = input("Enter Limit:")
-message = input("Enter Message:")
-i = 0
-time.slepp(3)
-
-while i <int(limit):
-  pt.typewrite(message)
-  # the message is written where -
-  # the cursor belongs
-
-pt.press(enter)
-
-l+=1
+wb.open("web.whatsapp.com")
+time.sleep(50)
+for i in range(10):
+    pyautogui.press("hii bro How are You ?")
+    pyautogui.press("enter")
